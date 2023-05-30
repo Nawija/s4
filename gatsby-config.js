@@ -12,15 +12,6 @@ module.exports = {
     },
     plugins: [
         {
-            resolve: `gatsby-plugin-google-gtag`,
-            options: {
-                trackingIds: ["G-9RH800R54W"],
-                pluginConfig: {
-                    head: true,
-                },
-            },
-        },
-        {
             resolve: `gatsby-transformer-remark`,
             options: {},
         },
@@ -71,7 +62,7 @@ module.exports = {
                 background_color: `#0C0904`,
                 theme_color: `#0C0904`,
                 display: `standalone`,
-                icon: `src/assets/logoBrowser.png`,
+                icon: `src/assets/favicon.png`,
             },
         },
     ],
