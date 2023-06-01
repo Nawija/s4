@@ -1,7 +1,7 @@
-import * as React from "react";
+import React from "react";
 import { useStaticQuery, graphql } from "gatsby";
 
-import Header from "./header";
+import Nav from "./Nav";
 import Footer from "./footer";
 
 const Layout = ({ children }) => {
@@ -16,12 +16,13 @@ const Layout = ({ children }) => {
     `);
 
     return (
-        <div className="relative text-base max-w-[2000px] mx-auto">
-            <Header siteTitle={data.site.siteMetadata?.title || `Seovileo`} />
-            <main className="w-full overflow-hidden">{children}</main>
+        <>
+            <Nav siteTitle={data.site.siteMetadata?.title || `Seovileo`} />
+
+            <main>{children}</main>
 
             <Footer />
-        </div>
+        </>
     );
 };
 
