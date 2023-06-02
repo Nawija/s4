@@ -3,7 +3,7 @@ import { useStaticQuery, graphql } from "gatsby";
 
 import Nav from "./nav";
 import Footer from "./footer";
-import CircleFixed from "./circleFixed";
+import BgMain from "./bgMain";
 
 const Layout = ({ children }) => {
     const data = useStaticQuery(graphql`
@@ -19,7 +19,7 @@ const Layout = ({ children }) => {
     return (
         <>
             <Nav siteTitle={data.site.siteMetadata?.title || `Seovileo`} />
-            <CircleFixed />
+            <BgMain />
 
             <main>{children}</main>
 
