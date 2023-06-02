@@ -6,6 +6,7 @@
     --main-color: #f7f7f7;
     --main-body-color: #05020d;
 }
+
 body {
     color: var(--main-color);
     background-color: var(--main-body-color);
@@ -16,6 +17,7 @@ main {
     max-width: 1600px;
     min-height: 100vh;
     margin: 0 auto;
+    text-align: center;
 }
 
 .flex-center {

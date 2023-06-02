@@ -3,7 +3,7 @@
  */
 
 module.exports = {
-    pathPrefix: "/seovileov3",
+    pathPrefix: "/s4",
     siteMetadata: {
         title: `Stwórz swoja stronę internetową`,
         description: `Tworzenie Szybkich i Przyjaznych dla SEO Stron Internetowych z Niezależnym Freelancerem Korzystającym z Technologii GatsbyJS`,
