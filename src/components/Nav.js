@@ -115,7 +115,7 @@ const Nav = () => {
                     Darmowa Wycena
                 </Link>
 
-                <button className="p-1 lg:hidden">
+                <button aria-label="menu" title="menu" className="p-1 lg:hidden">
                     <svg
                         width="30"
                         height="30"
