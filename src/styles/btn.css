@@ -1,0 +1,62 @@
+.btn {
+    position: relative;
+    width: 10rem;
+    height: 3rem;
+    background: #dddbdb;
+    border-radius: 8px;
+    overflow: hidden;
+}
+.btn button {
+    position: absolute;
+    inset: 4px;
+    background: #faf8f8;
+    border-radius: 8px;
+    z-index: 2;
+}
+
+.btn::before {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 10rem;
+    height: 3rem;
+    background: linear-gradient(
+        360deg,
+        rgb(97, 226, 255) 50%,
+        rgb(22, 251, 255) 57%,
+        rgb(0, 247, 255) 68%,
+        rgb(8, 199, 170) 100%
+    );
+    z-index: 1;
+    transform-origin: bottom right;
+    animation: animate 3s linear infinite;
+}
+.btn::after {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 10rem;
+    height: 3rem;
+    background: linear-gradient(
+        360deg,
+        rgba(199, 44, 255, 1) 27%,
+        rgba(199, 44, 255, 1) 57%,
+        rgba(255, 0, 164, 1) 68%,
+        rgba(223, 0, 0, 1) 100%
+    );
+    z-index: 1;
+    transform-origin: bottom right;
+    animation: animate 3s linear infinite;
+    animation-delay: -1.5s;
+}
+
+@keyframes animate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}

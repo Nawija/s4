@@ -1,7 +1,6 @@
 import React from "react";
 import Layout from "../components/layout";
 import Seo from "../components/seo";
-import { Link } from "gatsby";
 
 const IndexPage = () => {
     return (
@@ -16,13 +15,14 @@ const IndexPage = () => {
                     form, by injected humour, or randomised words which don't
                     look even slightly believable.
                 </p>
-                <Link to="/projekty" className="my-3 py-2 px-4 bg-[#EAEBF0] text-gray-900 font-medium rounded-md">Zobacz Projekty</Link>
+                <div className="btn">
+                    <button
+                        className="text-gray-900 font-medium"
+                    >
+                        Zobacz Projekty
+                    </button>
+                </div>
             </div>
-
-
-
-
-
 
             <div className="h-[200vh]" />
         </Layout>
