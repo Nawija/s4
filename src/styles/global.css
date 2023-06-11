@@ -3,8 +3,8 @@
 @tailwind utilities;
 
 :root {
-    --main-color: #f7f7f7;
-    --main-body-color: #05020d;
+    --main-color: #292929;
+    --main-body-color: #ffffff;
 }
 
 body {
@@ -14,7 +14,7 @@ body {
 main {
     position: relative;
     width: 100%;
-    max-width: 1600px;
+    max-width: 1500px;
     min-height: 100vh;
     margin: 0 auto;
     text-align: center;

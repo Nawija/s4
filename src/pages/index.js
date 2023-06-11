@@ -7,21 +7,12 @@ const IndexPage = () => {
         <Layout>
             <div className="flex-center flex-col py-10">
                 <h1 className="font-bold text-5xl sm:text-6xl md:text-7xl lg:text-8xl w-min py-6">
-                    Supercharged productivity
+                    Strona Główna
                 </h1>
                 <p className="text-gray-400 py-6 w-4/5 md:w-3/5">
                     There are many variations of passages of Lorem Ipsum
-                    available, but the majority have suffered alteration in some
-                    form, by injected humour, or randomised words which don't
-                    look even slightly believable.
+                    available
                 </p>
-                <div className="btn">
-                    <button
-                        className="text-gray-900 font-medium"
-                    >
-                        Zobacz Projekty
-                    </button>
-                </div>
             </div>
 
             <div className="h-[200vh]" />
