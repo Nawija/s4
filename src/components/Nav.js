@@ -3,8 +3,8 @@ import { Link } from "gatsby";
 
 const Nav = () => {
     return (
-        <nav className="mx-auto w-full">
-            <div className="max-w-screen-2xl mx-auto px-2 py-2 flex-between">
+        <nav className="mx-auto w-full py-4 px-2 bg-white sticky top-0 z-50">
+            <div className="w-full mx-auto max-w-screen-2xl flex-between">
                 <Link
                     to="/"
                     className="flex items-center justify-center"
@@ -62,19 +62,22 @@ const Nav = () => {
                     </p>
                 </Link>
 
-                <ul className="lg:flex hidden space-x-6 font-medium text-[14px]">
+                <ul className="lg:flex hidden space-x-2 font-medium text-[14px]">
                     <li>
-                        <Link aria-label="Home" title="Home" to="/">
+                        <Link
+                            className="hover-link" aria-label="Home" title="Home" to="/">
                             Home
                         </Link>
                     </li>
                     <li>
-                        <Link aria-label="Usługi" title="Usługi" to="/usługi">
+                        <Link
+                            className="hover-link" aria-label="Usługi" title="Usługi" to="/usługi">
                             Usługi
                         </Link>
                     </li>
                     <li>
                         <Link
+                            className="hover-link"
                             aria-label="Projekty"
                             title="Projekty"
                             to="/projekty"
@@ -84,6 +87,7 @@ const Nav = () => {
                     </li>
                     <li>
                         <Link
+                            className="hover-link"
                             aria-label="Szablony"
                             title="Szablony"
                             to="/szablony"
@@ -92,12 +96,14 @@ const Nav = () => {
                         </Link>
                     </li>
                     <li>
-                        <Link aria-label="Blog" title="Blog" to="/blog">
+                        <Link
+                            className="hover-link" aria-label="Blog" title="Blog" to="/blog">
                             Blog
                         </Link>
                     </li>
                     <li>
                         <Link
+                            className="hover-link"
                             aria-label="kontakt"
                             title="kontakt"
                             to="/kontakt"

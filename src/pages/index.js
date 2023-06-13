@@ -6,15 +6,11 @@ import { StaticImage } from "gatsby-plugin-image";
 const IndexPage = () => {
     return (
         <Layout>
-            <div className="flex-center flex-col py-10">
-                <div className="relative w-full h-max">
-                    <StaticImage
-                        className="w-full h-full inset-0"
-                        src="../assets/3d-abstrakcyjne-tlo-z-nowoczesnym-wzorem-splotu.jpg"
-                    />
-                    <h1 className="font-bold text-5xl sm:text-6xl md:text-7xl lg:text-8xl w-max py-6 absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
+            <div className="flex-center flex-col">
+                <div className="relative bgImg">
+                    <p className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 font-bold text-3xl sm:text-4xl md:text-6xl lg:text-8xl w-max py-6 drop-shadow-lg">
                         Strona Główna
-                    </h1>
+                    </p>
                 </div>
                 <p className="text-gray-400 py-6 w-4/5 md:w-3/5">
                     There are many variations of passages of Lorem Ipsum
@@ -27,6 +23,6 @@ const IndexPage = () => {
     );
 };
 
-export const Head = () => <Seo title="Strony Internetowe" />;
+export const Head = () => <Seo title="Strony Internetowe" description="" />;
 
 export default IndexPage;

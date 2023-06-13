@@ -21,26 +21,71 @@ main {
     text-align: center;
 }
 
-.logo-color{
-    color: var(--logo-color)
+.bgImg {
+    height: 400px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-image: url(https://res.cloudinary.com/djseas9ht/image/upload/v1686692434/ll_qdid4g.jpg);
+    background-attachment: fixed;
+}
+@media (max-width: 600px) {
+    .bgImg {
+        height: 500px;
+        background-image: url(https://res.cloudinary.com/djseas9ht/image/upload/v1686693423/p_1_uxr75a.jpg);
+    }
+}
+
+.hover-link {
+    padding: 0.5rem;
+    border-radius: 0.375rem;
+    transition-property: color, background-color;
+    transition-duration: 150ms;
+}
+.hover-link:hover {
+    background-color: #e8e8e8;
+}
+
+.logo-color {
+    color: var(--logo-color);
 }
 
 .blue-btn {
-    @apply capitalize bg-[#1A5ADB] shadow-lg shadow-[#A6D0FF] px-3 py-1.5 text-sm text-white font-medium rounded-md transition-all duration-150;
+    padding: 0.5rem 0.875rem;
+    background-color: #1a5adb;
+    box-shadow: 0 10px 15px -3px #a6d0ff, 0 4px 6px -4px #a6d0ff;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    font-weight: 500;
+    border-radius: 0.375rem;
+    color: white;
+    text-transform: capitalize;
+    transition-property: all;
+    transition-duration: 150ms;
 }
 .blue-btn:hover {
-    @apply bg-[#1f4ba3] shadow-[#89aacf]
+    color: whitesmoke;
+    background-color: #1f4ba3;
+    box-shadow: 0 10px 15px -3px #87aad1, 0 4px 6px -4px #87aad1;
 }
 
 .flex-center {
-    @apply flex justify-center items-center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .flex-start {
-    @apply flex justify-start items-start;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
 }
 .flex-end {
-    @apply flex justify-end items-center;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
 }
 .flex-between {
-    @apply flex justify-between items-center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
