@@ -3,7 +3,8 @@
 @tailwind utilities;
 
 :root {
-    --main-color: #292929;
+    --logo-color: #393a46;
+    --main-text-color: #282a3b;
     --main-body-color: #ffffff;
 }
 
@@ -18,6 +19,17 @@ main {
     min-height: 100vh;
     margin: 0 auto;
     text-align: center;
+}
+
+.logo-color{
+    color: var(--logo-color)
+}
+
+.blue-btn {
+    @apply capitalize bg-[#1A5ADB] shadow-lg shadow-[#A6D0FF] px-3 py-1.5 text-sm text-white font-medium rounded-md transition-all duration-150;
+}
+.blue-btn:hover {
+    @apply bg-[#1f4ba3] shadow-[#89aacf]
 }
 
 .flex-center {

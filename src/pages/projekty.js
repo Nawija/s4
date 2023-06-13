@@ -14,7 +14,7 @@ const IndexPage = () => {
                     There are many variations of passages of Lorem Ipsum
                     available
                 </p>
-                <Link to="/" className="my-3 py-2 px-4 bg-[#EAEBF0] text-gray-900 font-medium rounded-md">Strona Główna</Link>
+                <Link to="/" className="blue-btn">Strona Główna</Link>
             </div>
 
 
