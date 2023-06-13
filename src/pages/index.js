@@ -6,7 +6,7 @@ const IndexPage = () => {
     return (
         <Layout>
             <div className="flex-center flex-col py-10">
-                <h1 className="font-bold text-5xl sm:text-6xl md:text-7xl lg:text-8xl w-min py-6">
+                <h1 className="font-bold text-5xl sm:text-6xl md:text-7xl lg:text-8xl w-max py-6">
                     Strona Główna
                 </h1>
                 <p className="text-gray-400 py-6 w-4/5 md:w-3/5">
