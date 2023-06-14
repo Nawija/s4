@@ -26,7 +26,7 @@ body {
     margin: 0 auto;
 }
 
-/* .bgImg {
+.bgImg {
     top: 0;
     left: 0;
     height: 400px;
@@ -45,35 +45,6 @@ body {
         background-size: cover;
         background-position: left;
         background-attachment: fixed;
-    }
-} */
-
-.bgImg {
-    position: relative;
-    height: 400px;
-    width: 100%;
-    max-height: 400px;
-    overflow: hidden;
-}
-
-.bgImg::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-image: url(https://res.cloudinary.com/djseas9ht/image/upload/v1686692426/ll_ekqhqd.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    z-index: -1;
-}
-
-@media (max-width: 1024px) {
-    .bgImg {
-        height: 20vh;
     }
 }
 
