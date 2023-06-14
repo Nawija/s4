@@ -8,8 +8,8 @@ const Nav = () => {
                 <Link
                     to="/"
                     className="flex items-center justify-center"
-                    aria-label="logo"
-                    title="logo"
+                    aria-label="Logo"
+                    title="Logo Seovileo"
                 >
                     <svg
                         width="40"
@@ -104,8 +104,8 @@ const Nav = () => {
                     <li>
                         <Link
                             className="hover-link"
-                            aria-label="kontakt"
-                            title="kontakt"
+                            aria-label="Kontakt"
+                            title="Kontakt"
                             to="/kontakt"
                         >
                             Kontakt
