@@ -3,8 +3,8 @@ import { Link } from "gatsby";
 
 const Nav = () => {
     return (
-        <nav className="mx-auto w-full py-4 px-2 bg-white sticky top-0 z-50">
-            <div className="w-full mx-auto max-w-screen-2xl flex-between">
+        <nav className="w-full py-4 bg-white sticky top-0 z-50 overflow-hidden">
+            <div className="mx-auto max-w-screen-2xl flex-between">
                 <Link
                     to="/"
                     className="flex items-center justify-center"
@@ -116,7 +116,7 @@ const Nav = () => {
                     Darmowa Wycena
                 </Link>
 
-                <button aria-label="menu" title="menu" className="p-1 lg:hidden">
+                <button aria-label="menu" title="Menu" className="p-1 lg:hidden">
                     <svg
                         width="30"
                         height="30"
