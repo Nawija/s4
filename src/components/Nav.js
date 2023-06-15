@@ -1,10 +1,13 @@
 import React from "react";
 import { Link } from "gatsby";
+import { useState } from "react";
 
 const Nav = () => {
+    const [showMenu, setMenu] = useState(false);
+    const handleMenu = () => setMenu(!showMenu);
     return (
-        <nav className="w-full py-3 px-3 bg-white sticky top-0 z-50 overflow-hidden">
-            <div className="mx-auto max-w-screen-2xl flex-between">
+        <nav className="w-full bg-white sticky top-0 z-50">
+            <div className="px-2 py-2 top-0 max-w-screen-2xl flex-between">
                 <Link
                     to="/"
                     className="flex items-center justify-center"
@@ -62,7 +65,13 @@ const Nav = () => {
                     </p>
                 </Link>
 
-                <ul className="lg:flex hidden space-x-2 font-medium text-[14px]">
+                <ul
+                    className={
+                        !showMenu
+                            ? "absolute bg-white z-50 space-y-3 top-full shadow-lg py-4 w-full text-center font-medium text-[14px]"
+                            : "lg:flex hidden font-medium text-[14px]"
+                    }
+                >
                     <li>
                         <Link
                             className="hover-link"
@@ -134,6 +143,8 @@ const Nav = () => {
                 </Link>
 
                 <button
+                    type="button"
+                    onClick={handleMenu}
                     aria-label="menu"
                     title="Menu"
                     className="p-2 lg:hidden"
