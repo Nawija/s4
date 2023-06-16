@@ -2,29 +2,15 @@ import React from "react";
 import Layout from "../components/layout";
 import Seo from "../components/seo";
 import LiveSquares from "../components/liveSquares";
-import { StaticImage } from "gatsby-plugin-image";
 
 const IndexPage = () => {
     return (
         <Layout>
-            <div className="flex-center flex-col">
-                <div className="relative">
+            <div className="relative flex-center flex-col">
                     <LiveSquares />
-                    <StaticImage
-                        imgClassName="hidden md:flex"
-                        className="hidden md:flex"
-                        alt="doskonałe strony"
-                        quality={100}
-                        src="../assets/hh.jpg"
-                    />
-                    <StaticImage
-                        imgClassName="flex md:hidden"
-                        className="flex md:hidden"
-                        alt="doskonałe strony"
-                        quality={100}
-                        src="../assets/sh.jpg"
-                    />
-                    <p className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 font-bold text-3xl sm:text-4xl md:text-6xl lg:text-8xl w-max py-6 drop-shadow-lg">
+                <div className="relative h-96 w-full -z-10">
+                    <div className="bg-gradient-to-tr from-blue-700 to-blue-500 h-full w-full -z-10" />
+                    <p className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 font-bold text-3xl sm:text-4xl md:text-6xl lg:text-8xl w-max py-6 drop-shadow-lg text-white">
                         Doskonałe Strony
                     </p>
                 </div>
