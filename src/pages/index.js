@@ -9,7 +9,7 @@ const IndexPage = () => {
             <div className="relative flex-center flex-col">
                 <LiveSquares />
                 <div className="relative h-96 w-full -z-10">
-                    <div className="bg-gradient-to-tr from-blue-700 to-blue-500 h-full w-full -z-10 overflow-hidden" />
+                    <div className="bg-gradient-to-tr from-blue-800 to-sky-500 h-full w-full -z-10 overflow-hidden" />
                     <p className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 font-bold text-3xl sm:text-4xl md:text-6xl lg:text-8xl w-max py-6 drop-shadow-lg text-white px-3">
                         Doskonałe Strony
                     </p>

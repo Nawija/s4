@@ -81,7 +81,7 @@ const Nav = () => {
                         </defs>
                     </svg>
 
-                    <p className="-tracking-wide logo-color font-bold text-lg">
+                    <p className="-tracking-wide logo-color font-bold text-lg font-sans">
                         Seovileo
                     </p>
                 </Link>
