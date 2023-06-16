@@ -6,13 +6,15 @@ import LiveSquares from "../components/liveSquares";
 const IndexPage = () => {
     return (
         <Layout>
-            <div className="relative flex-center flex-col">
-                <LiveSquares />
-                <div className="relative h-96 w-full -z-10">
-                    <div className="bg-gradient-to-tr from-blue-800 to-sky-500 h-full w-full -z-10 overflow-hidden" />
-                    <p className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 font-bold text-3xl sm:text-4xl md:text-6xl lg:text-8xl w-max py-6 drop-shadow-lg text-white px-3">
-                        Doskonałe Strony
-                    </p>
+            <div className="relative flex-center flex-col z-0">
+                <div className="relative h-40 md:h-96 w-full -z-10">
+                    <LiveSquares />
+                    <div className="relative h-52 md:h-96 w-full -z-10">
+                        <div className="bg-gradient-to-tr from-blue-800 to-sky-500 h-full w-full -z-10" />
+                        <p className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 font-bold text-3xl sm:text-4xl md:text-6xl lg:text-8xl w-max py-6 drop-shadow-lg text-white px-3">
+                            Doskonałe Strony
+                        </p>
+                    </div>
                 </div>
                 <section class="container max-w-screen-xl mt-4 lg:-mt-20 mb-6 md:mb-24 mx-auto">
                     <div class=" text-gray-800 text-center">

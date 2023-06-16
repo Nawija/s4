@@ -25,7 +25,7 @@ const Nav = () => {
     return (
         <nav
             ref={navRef}
-            className="w-full bg-white/70 backdrop-blur-md sticky top-0 z-50"
+            className="w-full bg-white lg:bg-white/90 backdrop-blur-md sticky top-0 z-50"
         >
             <div className="mx-auto px-2 py-2 lg:py-3 top-0 max-w-screen-2xl flex-between">
                 <Link
