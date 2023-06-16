@@ -10,8 +10,20 @@ const IndexPage = () => {
             <div className="flex-center flex-col">
                 <div className="relative">
                     <LiveSquares />
-                    <StaticImage className="hidden md:flex" quality={100} src="../assets/hh.jpg" />
-                    <StaticImage className="flex md:hidden" quality={100} src="../assets/sh.jpg" />
+                    <StaticImage
+                        imgClassName="hidden md:flex"
+                        alt="doskonałe strony"
+                        breakpoints="[750, 1080, 1366, 1920]"
+                        quality={100}
+                        src="../assets/hh.jpg"
+                    />
+                    <StaticImage
+                        imgClassName="flex md:hidden"
+                        alt="doskonałe strony"
+                        breakpoints="[750, 1080, 1366, 1920]"
+                        quality={100}
+                        src="../assets/sh.jpg"
+                    />
                     <p className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 font-bold text-3xl sm:text-4xl md:text-6xl lg:text-8xl w-max py-6 drop-shadow-lg">
                         Doskonałe Strony
                     </p>
