@@ -1,15 +1,15 @@
 import React from "react";
 
 const CardCom = () => (
-    <section class="container max-w-screen-xl -mt-10 lg:-mt-20 mb-6 md:mb-12 mx-auto">
-        <div class=" text-gray-800 text-center">
-            <div class="grid lg:gap-x-12 md:grid-cols-3 lg:px-4">
-                <div class="mb-12 lg:mb-0">
-                    <div class="rounded-lg shadow-xl h-full block bg-white/60 backdrop-blur-xl w-[90%] sm:w-[90%] lg:w-full mx-auto px-4">
-                        <div class="flex justify-center">
-                            <div class="p-4 bg-gradient-to-t from-amber-500 to-amber-300 shadow-amber-600 rounded-full shadow-lg inline-block -mt-8">
+    <section className="container max-w-screen-xl -mt-10 lg:-mt-20 mb-6 md:mb-12 mx-auto">
+        <div className=" text-gray-800 text-center">
+            <div className="grid lg:gap-x-12 md:grid-cols-2 lg:grid-cols-3 lg:px-4">
+                <div className="mb-12 lg:mb-0">
+                    <div className="rounded-lg shadow-xl h-full block bg-white/60 backdrop-blur-xl w-[90%] sm:w-[90%] lg:w-full mx-auto px-4">
+                        <div className="flex justify-center">
+                            <div className="p-4 bg-gradient-to-t from-amber-500 to-amber-300 shadow-amber-600 rounded-full shadow-lg inline-block -mt-8">
                                 <svg
-                                    class="w-8 h-8 text-white"
+                                    className="w-8 h-8 text-white"
                                     xmlns="http://www.w3.org/2000/svg"
                                     viewBox="0 0 512 512"
                                 >
@@ -20,8 +20,8 @@ const CardCom = () => (
                                 </svg>
                             </div>
                         </div>
-                        <div class="px-2 py-6 sm:px-6">
-                            <h2 class="text-lg font-bold mb-4">
+                        <div className="px-2 py-6 sm:px-6">
+                            <h2 className="text-lg font-bold mb-4">
                                 Szybkość działania
                             </h2>
                             <p>
@@ -36,13 +36,13 @@ const CardCom = () => (
                     </div>
                 </div>
 
-                <div class="mb-12 lg:mb-0">
-                    <div class="rounded-lg shadow-xl h-full block bg-white/60 backdrop-blur-xl w-[90%] sm:w-[90%] lg:w-full mx-auto px-4">
-                        <div class="flex justify-center">
-                            <div class="p-4 bg-gradient-to-t from-amber-500 to-amber-300 shadow-amber-600 rounded-full shadow-lg inline-block -mt-8">
+                <div className="mb-12 lg:mb-0">
+                    <div className="rounded-lg shadow-xl h-full block bg-white/60 backdrop-blur-xl w-[90%] sm:w-[90%] lg:w-full mx-auto px-4">
+                        <div className="flex justify-center">
+                            <div className="p-4 bg-gradient-to-t from-amber-500 to-amber-300 shadow-amber-600 rounded-full shadow-lg inline-block -mt-8">
                                 <svg
                                     xmlns="http://www.w3.org/2000/svg"
-                                    class="h-8 w-8 scale-110"
+                                    className="h-8 w-8 scale-110"
                                     viewBox="0 0 24 24"
                                     stroke-width="2"
                                     stroke="white"
@@ -62,8 +62,8 @@ const CardCom = () => (
                                 </svg>
                             </div>
                         </div>
-                        <div class="px-2 py-6 sm:px-6">
-                            <h2 class="text-lg font-bold mb-4">
+                        <div className="px-2 py-6 sm:px-6">
+                            <h2 className="text-lg font-bold mb-4">
                                 Przyjazna SEO
                             </h2>
                             <p>
@@ -77,13 +77,13 @@ const CardCom = () => (
                     </div>
                 </div>
 
-                <div class="">
-                    <div class="rounded-lg shadow-xl h-full block bg-white/60 backdrop-blur-xl w-[90%] sm:w-[90%] lg:w-full mx-auto px-4">
-                        <div class="flex justify-center">
-                            <div class="p-4 bg-gradient-to-t from-amber-500 to-amber-300 shadow-amber-600 rounded-full shadow-lg inline-block -mt-8">
+                <div className="">
+                    <div className="rounded-lg shadow-xl h-full block bg-white/60 backdrop-blur-xl w-[90%] sm:w-[90%] lg:w-full mx-auto px-4">
+                        <div className="flex justify-center">
+                            <div className="p-4 bg-gradient-to-t from-amber-500 to-amber-300 shadow-amber-600 rounded-full shadow-lg inline-block -mt-8">
                                 <svg
                                     xmlns="http://www.w3.org/2000/svg"
-                                    class="h-8 w-8 scale-125"
+                                    className="h-8 w-8 scale-125"
                                     viewBox="0 0 24 24"
                                     stroke-width="2"
                                     stroke="currentColor"
@@ -104,8 +104,8 @@ const CardCom = () => (
                                 </svg>
                             </div>
                         </div>
-                        <div class="px-2 py-6 sm:px-6">
-                            <h2 class="text-lg font-bold mb-4">
+                        <div className="px-2 py-6 sm:px-6">
+                            <h2 className="text-lg font-bold mb-4">
                                 Technologia Premium
                             </h2>
                             <p>
