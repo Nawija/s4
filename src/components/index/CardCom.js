@@ -3,8 +3,8 @@ import React from "react";
 const CardCom = () => (
     <section className="container max-w-screen-xl -mt-10 lg:-mt-20 mb-6 md:mb-12 mx-auto">
         <div className=" text-gray-800 text-center">
-            <div className="flex flex-col sm:flex-row flex-wrap mx-auto w-full items-stretch justify-center">
-                <div className="w-96 m-3 px-4 rounded-lg shadow-xl bg-white/60 backdrop-blur-xl ">
+            <div className="flex flex-col md:flex-row flex-wrap mx-auto w-full md:items-stretch items-center justify-center">
+                <div className="lg:w-96 md:w-80 w-4/5 mb-4 mx-2 lg:mx-3 px-4 rounded-lg shadow-xl bg-white/60 backdrop-blur-xl ">
                     <div className="flex flex-col justify-center">
                         <div className="p-4 w-max mx-auto bg-gradient-to-t from-amber-500 to-amber-300 shadow-amber-600 rounded-full shadow-lg -mt-8">
                             <svg
@@ -33,7 +33,7 @@ const CardCom = () => (
                     </div>
                 </div>
 
-                <div className="w-96 m-3 px-4 rounded-lg shadow-xl bg-white/60 backdrop-blur-xl ">
+                <div className="lg:w-96 md:w-80 w-4/5 mb-4 mx-2 lg:mx-3 px-4 rounded-lg shadow-xl bg-white/60 backdrop-blur-xl ">
                     <div className="flex flex-col justify-center">
                         <div className="p-4 w-max mx-auto bg-gradient-to-t from-amber-500 to-amber-300 shadow-amber-600 rounded-full shadow-lg -mt-8">
                             <svg
@@ -71,7 +71,7 @@ const CardCom = () => (
                     </div>
                 </div>
 
-                <div className="w-96 m-3 px-4 rounded-lg shadow-xl bg-white/60 backdrop-blur-xl ">
+                <div className="lg:w-96 md:w-80 w-4/5 mb-4 mx-2 lg:mx-3 px-4 rounded-lg shadow-xl bg-white/60 backdrop-blur-xl ">
                     <div className="flex flex-col justify-center">
                         <div className="p-4 w-max mx-auto bg-gradient-to-t from-amber-500 to-amber-300 shadow-amber-600 rounded-full shadow-lg -mt-8">
                             <svg

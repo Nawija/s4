@@ -4,6 +4,7 @@ import Seo from "../components/seo";
 import LiveSquares from "../components/liveSquares";
 
 import { CardCom } from "../components/index";
+import { StaticImage } from "gatsby-plugin-image";
 
 const IndexPage = () => {
     return (
@@ -20,13 +21,24 @@ const IndexPage = () => {
                 </div>
                 <CardCom />
 
-                <p className="text-gray-500 py-6 w-4/5 md:w-3/5">
-                    There are many variations of passages of Lorem Ipsum
-                    available
+                <h2 className="text-gray-700 text-xl font-semibold px-3">
+                    Odkryj Potęgę Profesjonalnych Stron Internetowych!
+                </h2>
+                <p className="px-3 sm:w-4/5 md:w-3/5 lg:w-2/5 my-2 py-2 text-gray-700 lg:text-lg">
+                    Zajmuję się tworzeniem unikalnych stron internetowych, które
+                    przyciągają uwagę klientów i generują większe zyski
                 </p>
+                <div className="flex flex-col lg:flex-row items-center justify-center">
+                    <div className="w-full lg:w-1/2">
+                        <StaticImage quality={100} src="../assets/x.jpg" />
+                    </div>
+                    <div className="w-full lg:w-1/2">
+                        <StaticImage quality={100} src="../assets/x.jpg" />
+                    </div>
+                </div>
             </div>
 
-            <div className="h-[200vh]" />
+            <div className="h-[100vh]" />
         </Layout>
     );
 };
