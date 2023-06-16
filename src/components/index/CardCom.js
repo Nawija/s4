@@ -3,8 +3,8 @@ import React from "react";
 const CardCom = () => (
     <section className="container max-w-screen-xl -mt-10 lg:-mt-20 mb-6 md:mb-12 mx-auto">
         <div className=" text-gray-800 text-center">
-            <div className="flex flex-col sm:flex-row flex-wrap mx-auto w-full items-center justify-stretch">
-                <div className="mb-12 h-72 w-96 lg:mb-0">
+            <div className="flex flex-col sm:flex-row flex-wrap mx-auto w-full items-stretch justify-center">
+                <div className="mb-12  w-96 m-3 lg:mb-0">
                     <div className="rounded-lg shadow-xl h-full block bg-white/60 backdrop-blur-xl lg:w-full mx-auto px-4">
                         <div className="flex justify-center">
                             <div className="p-4 bg-gradient-to-t from-amber-500 to-amber-300 shadow-amber-600 rounded-full shadow-lg inline-block -mt-8">
@@ -36,7 +36,7 @@ const CardCom = () => (
                     </div>
                 </div>
 
-                <div className="mb-12 h-72 w-96 lg:mb-0">
+                <div className="mb-12  w-96 m-3 lg:mb-0">
                     <div className="rounded-lg shadow-xl h-full block bg-white/60 backdrop-blur-xl lg:w-full mx-auto px-4">
                         <div className="flex justify-center">
                             <div className="p-4 bg-gradient-to-t from-amber-500 to-amber-300 shadow-amber-600 rounded-full shadow-lg inline-block -mt-8">
@@ -77,7 +77,7 @@ const CardCom = () => (
                     </div>
                 </div>
 
-                <div className="h-72 w-96">
+                <div className=" w-96 m-3">
                     <div className="rounded-lg shadow-xl h-full block bg-white/60 backdrop-blur-xl lg:w-full mx-auto px-4">
                         <div className="flex justify-center">
                             <div className="p-4 bg-gradient-to-t from-amber-500 to-amber-300 shadow-amber-600 rounded-full shadow-lg inline-block -mt-8">
