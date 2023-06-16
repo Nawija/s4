@@ -12,15 +12,15 @@ const IndexPage = () => {
                     <LiveSquares />
                     <StaticImage
                         imgClassName="hidden md:flex"
+                        className="hidden md:flex"
                         alt="doskonałe strony"
-                        breakpoints="[750, 1080, 1366, 1920]"
                         quality={100}
                         src="../assets/hh.jpg"
                     />
                     <StaticImage
                         imgClassName="flex md:hidden"
+                        className="flex md:hidden"
                         alt="doskonałe strony"
-                        breakpoints="[750, 1080, 1366, 1920]"
                         quality={100}
                         src="../assets/sh.jpg"
                     />
