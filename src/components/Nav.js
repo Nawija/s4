@@ -22,19 +22,6 @@ const Nav = () => {
         };
     }, []);
 
-    const [isMobile, setIsMobile] = useState(window.innerWidth <= 1023);
-
-    useEffect(() => {
-        const handleResize = () => {
-            setIsMobile(window.innerWidth <= 1023);
-        };
-
-        window.addEventListener("resize", handleResize);
-
-        return () => {
-            window.removeEventListener("resize", handleResize);
-        };
-    }, []);
     return (
         <nav
             ref={navRef}
@@ -178,9 +165,6 @@ const Nav = () => {
                 >
                     <li>
                         <Link
-                            tabIndex={
-                                isMobile ? (showMenu ? "0" : "-1") : undefined
-                            }
                             onClick={closeMenu}
                             className="hover-link"
                             aria-label="Home"
@@ -192,9 +176,6 @@ const Nav = () => {
                     </li>
                     <li>
                         <Link
-                            tabIndex={
-                                isMobile ? (showMenu ? "0" : "-1") : undefined
-                            }
                             onClick={closeMenu}
                             className="hover-link"
                             aria-label="Usługi"
@@ -206,9 +187,6 @@ const Nav = () => {
                     </li>
                     <li>
                         <Link
-                            tabIndex={
-                                isMobile ? (showMenu ? "0" : "-1") : undefined
-                            }
                             onClick={closeMenu}
                             className="hover-link"
                             aria-label="Projekty"
@@ -220,9 +198,6 @@ const Nav = () => {
                     </li>
                     <li>
                         <Link
-                            tabIndex={
-                                isMobile ? (showMenu ? "0" : "-1") : undefined
-                            }
                             onClick={closeMenu}
                             className="hover-link"
                             aria-label="Szablony"
@@ -234,9 +209,6 @@ const Nav = () => {
                     </li>
                     <li>
                         <Link
-                            tabIndex={
-                                isMobile ? (showMenu ? "0" : "-1") : undefined
-                            }
                             onClick={closeMenu}
                             className="hover-link"
                             aria-label="Blog"
@@ -248,9 +220,6 @@ const Nav = () => {
                     </li>
                     <li>
                         <Link
-                            tabIndex={
-                                isMobile ? (showMenu ? "0" : "-1") : undefined
-                            }
                             onClick={closeMenu}
                             className="hover-link"
                             aria-label="Kontakt"
