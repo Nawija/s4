@@ -2,39 +2,13 @@ import React from "react";
 import Layout from "../components/layout";
 import Seo from "../components/seo";
 import { StaticImage } from "gatsby-plugin-image";
-import { useStaticQuery, graphql, Link } from "gatsby";
-import { GatsbyImage, getImage } from "gatsby-plugin-image";
+import { Link } from "gatsby";
 
 import LiveSquares from "../components/liveSquares";
 
-import { CardCom } from "../components/index";
+import { CardCom, ServiceCom } from "../components/index";
 
 const IndexPage = () => {
-    const data = useStaticQuery(
-        graphql`
-            {
-                allDatoCmsUsluga(sort: { position: ASC }) {
-                    edges {
-                        node {
-                            id
-                            title
-                            desc
-                            slug
-                            img {
-                                alt
-                                title
-                                gatsbyImageData(
-                                    height: 70
-                                    width: 70
-                                    placeholder: NONE
-                                )
-                            }
-                        }
-                    }
-                }
-            }
-        `
-    );
     return (
         <Layout>
             <div className="relative flex-center flex-col z-0">
@@ -90,30 +64,15 @@ const IndexPage = () => {
                     </div>
                 </section>
             </div>
-            <section className="bg-[#D6F0FE] py-12 px-6">
-                <h2 className="title">Usługi</h2>
-                <p className="mb-6">Przedstawiam zakres moich usług:</p>
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 xl:gap-8 py-6 max-w-screen-xl mx-auto">
-                    {data.allDatoCmsUsluga.edges.map(({ node }) => (
-                        <Link
-                            to={node.slug}
-                            key={node.id}
-                            className="px-3 py-6 border-2 border-gray-400 md:hover:bg-white md:hover:border-blue-400 group md:transition rounded-md md:hover:scale-[1.01] md:hover:shadow-xl"
-                        >
-                            <GatsbyImage
-                                image={getImage(node.img)}
-                                alt={node.img.alt}
-                                title={node.img.title}
-                            />
-                            <h2 className="title-sm group-hover:text-blue-500 md:transition-colors">
-                                {node.title}
-                            </h2>
-                            <p>{node.desc}</p>
-                        </Link>
-                    ))}
-                </div>
-            </section>
-            <StaticImage quality={100} src="../assets/r.jpg" alt="r" placeholder="domainColor" /> 
+
+            <ServiceCom />
+
+            <StaticImage
+                quality={100}
+                src="../assets/r.jpg"
+                alt="r"
+                placeholder="domainColor"
+            />
 
             <div className="h-[100vh]" />
         </Layout>
