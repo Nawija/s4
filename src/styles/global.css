@@ -52,10 +52,10 @@ body {
     padding: 0.5rem;
     border-radius: 0.375rem;
     transition-property: color, background-color;
-    transition-duration: 150ms;
+    transition-duration: 50ms;
 }
 .hover-link:hover {
-    background-color: #e8e8e8;
+    background-color: #e8e8e89d;
 }
 
 .logo-color {

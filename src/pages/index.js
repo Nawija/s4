@@ -14,6 +14,7 @@ const IndexPage = () => {
                     <LiveSquares />
                     <div className="relative h-full w-full -z-10">
                         <div className="bg-gradient-to-tr from-blue-800 to-sky-500 h-full w-full -z-10" />
+                        <StaticImage className="absolute top-0 w-full h-full left-0 opacity-20 bg-blend-multiply" imgClassName="absolute top-0 w-full h-full left-0 opacity-10 bg-blend-multiply" placeholder="domainColor" quality={40} src="../assets/x.jpg" />
                         <p className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 font-bold text-4xl sm:text-4xl md:text-6xl lg:text-8xl w-max py-6 drop-shadow-lg text-white px-3">
                             Doskonałe Strony
                         </p>
@@ -29,9 +30,6 @@ const IndexPage = () => {
                     przyciągają uwagę klientów i generują większe zyski
                 </p>
                 <div className="flex flex-col lg:flex-row items-center justify-center">
-                    <div className="w-full lg:w-1/2">
-                        <StaticImage quality={100} src="../assets/x.jpg" />
-                    </div>
                     <div className="w-full lg:w-1/2">
                         <StaticImage quality={100} src="../assets/x.jpg" />
                     </div>

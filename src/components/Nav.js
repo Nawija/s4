@@ -196,8 +196,8 @@ const Nav = () => {
                 <ul
                     className={
                         showMenu
-                            ? "absolute bg-white z-50 space-y-7 top-full left-0 shadow-lg py-12 w-full text-center font-bold text-[16px] translate-x-0 transition-all"
-                            : "absolute lg:static bg-white lg:bg-transparent z-50 space-y-7 lg:space-y-0 top-full left-0 shadow-lg py-4 w-full text-center font-bold text-[3px] lg:text-[15px] -translate-x-full lg:translate-x-0 lg:flex lg:w-max lg:shadow-none lg:font-semibold transition-all"
+                            ? "absolute bg-white z-50 space-y-7 top-full left-0 shadow-lg py-12 w-full text-center font-bold text-[16px] translate-x-0 transition-all opacity-100"
+                            : "absolute lg:static bg-white lg:bg-transparent z-50 space-y-7 lg:space-y-0 top-full left-0 shadow-lg py-12 lg:py-4 opacity-0 lg:opacity-100 w-full text-center font-bold lg:text-[15px] -translate-x-full lg:translate-x-0 lg:flex lg:w-max lg:shadow-none lg:font-semibold transition-all"
                     }
                 >
                     <li>
