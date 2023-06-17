@@ -1,10 +1,12 @@
 import React from "react";
 import Layout from "../components/layout";
 import Seo from "../components/seo";
+import { StaticImage } from "gatsby-plugin-image";
+import { Link } from "gatsby";
+
 import LiveSquares from "../components/liveSquares";
 
 import { CardCom } from "../components/index";
-import { StaticImage } from "gatsby-plugin-image";
 
 const IndexPage = () => {
     return (
@@ -14,7 +16,6 @@ const IndexPage = () => {
                     <LiveSquares />
                     <div className="relative h-full w-full -z-10">
                         <div className="bg-gradient-to-tr from-blue-800 to-sky-500 h-full w-full -z-10" />
-                        <StaticImage className="absolute top-0 w-full h-full left-0 opacity-20 bg-blend-multiply" imgClassName="absolute top-0 w-full h-full left-0 opacity-10 bg-blend-multiply" placeholder="domainColor" quality={40} src="../assets/x.jpg" />
                         <p className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 font-bold text-4xl sm:text-4xl md:text-6xl lg:text-8xl w-max py-6 drop-shadow-lg text-white px-3">
                             Doskonałe Strony
                         </p>
@@ -22,18 +23,49 @@ const IndexPage = () => {
                 </div>
                 <CardCom />
 
-                <h2 className="text-gray-700 text-xl font-semibold px-3">
-                    Odkryj Potęgę Profesjonalnych Stron Internetowych!
-                </h2>
-                <p className="px-3 sm:w-4/5 md:w-3/5 lg:w-2/5 my-2 py-2 text-gray-700 lg:text-lg">
-                    Zajmuję się tworzeniem unikalnych stron internetowych, które
-                    przyciągają uwagę klientów i generują większe zyski
-                </p>
-                <div className="flex flex-col lg:flex-row items-center justify-center">
+                <section className="flex flex-col items-center justify-center w-full">
+                    <h2 className="title">
+                        Odkryj Potęgę Profesjonalnych Stron Internetowych!
+                    </h2>
+                    <p className="px-3 sm:w-4/5 md:w-3/5 lg:w-2/5">
+                        Zajmuję się tworzeniem unikalnych stron internetowych,
+                        które przyciągają uwagę klientów i generują większe
+                        zyski
+                    </p>
+                </section>
+                <section className="flex flex-col lg:flex-row items-center space-y-5 justify-center">
                     <div className="w-full lg:w-1/2">
                         <StaticImage quality={100} src="../assets/x.jpg" />
                     </div>
-                </div>
+                    <div className="w-full lg:w-1/2 text-center lg:text-start max-w-xl">
+                        <h2 className="title">
+                            Projektowanie i tworzenie stron internetowych <br />
+                            <span>| Warszawa | Wrocław | Siedlce |</span>
+                        </h2>
+                        <p className="pb-6">
+                            Jeśli szukasz profesjonalnego wykonawcy strony
+                            internetowej, który dostarczy Ci funkcjonalne i
+                            estetyczne rozwiązania, warto zwrócić uwagę na moją
+                            ofertę wykonania stron i sklepów internetowych.
+                            Jestem doświadczonym specjalistą, który od lat
+                            projektuje i wdrażają skuteczne strony internetowe
+                            dla klientów z różnych branż. Oferta jest
+                            kompleksowa, obejmuje projektowanie, wdrażanie, a
+                            także utrzymanie i wsparcie techniczne po
+                            zakończeniu projektu. Dzięki temu możesz mieć
+                            pewność, że Twoja strona internetowa będzie działać
+                            bezawaryjnie i zawsze będzie na bieżąco. Skorzystaj
+                            z poniższego przycisku, aby poznać cenę strony
+                            internetowej oraz wysłać zapytanie w sprawie oferty.
+                        </p>
+                        <Link to="/darmowa-wycena" className="blue-btn">
+                            Kalkulator wyceny strony internetowej
+                        </Link>
+                    </div>
+                </section>
+            </div>
+            <div>
+                
             </div>
 
             <div className="h-[100vh]" />
