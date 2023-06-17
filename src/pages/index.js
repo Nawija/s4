@@ -113,7 +113,7 @@ const IndexPage = () => {
                     ))}
                 </div>
             </section>
-            <StaticImage quality={100} src="../assets/r.jpg" alt="r" placeholder="domainColor" />
+            <StaticImage quality={100} src="../assets/r.jpg" alt="r" placeholder="domainColor" /> 
 
             <div className="h-[100vh]" />
         </Layout>
