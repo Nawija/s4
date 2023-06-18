@@ -8,9 +8,7 @@
     font-size: 1.7rem;
     font-weight: 600;
 }
-#descHtml div {
-    @apply my-6;
-}
+#descHtml div,
 #descHtml p {
     @apply my-6;
 }
