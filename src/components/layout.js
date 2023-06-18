@@ -18,11 +18,9 @@ const Layout = ({ children }) => {
     return (
         <>
             <Nav siteTitle={data.site.siteMetadata?.title || `Seovileo`} />
-
             <main className="w-full overflow-hidden main text-center">
                 {children}
             </main>
-
             <Footer />
         </>
     );

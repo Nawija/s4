@@ -2,6 +2,23 @@
 @tailwind components;
 @tailwind utilities;
 
+#descHtml h2,
+#descHtml h2 span {
+    padding: 0.5rem 0;
+    font-size: 1.7rem;
+    font-weight: 600;
+}
+#descHtml div {
+    @apply my-6;
+}
+#descHtml p {
+    @apply my-6;
+}
+
+#descHtml a {
+    @apply text-blue-700 underline font-semibold;
+}
+
 :root {
     --logo-color: #26262e;
     --main-text-color: #282a3b;
@@ -59,19 +76,18 @@ body {
     box-shadow: 0 10px 15px -3px #87aad1, 0 4px 6px -4px #87aad1;
 }
 
-.title{
-    padding: .5rem 0;
+.title {
+    padding: 0.5rem 0;
     font-size: 1.7rem;
     font-weight: 600;
     @apply bg-gradient-to-r from-sky-500 font-bold via-blue-600 to-sky-500 bg-clip-text text-transparent;
 }
-.title-sm{
-    padding: .5rem 0;
+.title-sm {
+    padding: 0.5rem 0;
     font-size: 1.2rem;
     font-weight: 600;
-    @apply bg-gradient-to-r from-emerald-500 font-bold via-green-700 to-emerald-300 bg-clip-text text-transparent;
+    @apply bg-gradient-to-r from-blue-500 font-bold via-violet-600 to-blue-400 bg-clip-text text-transparent;
 }
-
 
 .flex-center {
     display: flex;
