@@ -26,7 +26,7 @@ const ServiceTemp = ({
         <Layout>
             <div className="relative">
                 <div className=" absolute inset-0 bg-blue-500/50 z-10" />
-                <GatsbyImage
+                {/* <GatsbyImage
                     style={{
                         height: "20vh",
                         width: "100%",
@@ -34,7 +34,8 @@ const ServiceTemp = ({
                     image={getImage(datoCmsUsluga.descUsluga[0].img)}
                     alt={datoCmsUsluga.descUsluga[0].img.alt}
                     title={datoCmsUsluga.descUsluga[0].img.title}
-                />
+                /> */}
+                <div className="h-[20vh] w-full bg-fixed" style={{backgroundImage:`url(${datoCmsUsluga.descUsluga[0].img.url})`, backgroundPosition:"bottom"}} />
             </div>
             <div className="flex flex-col lg:flex-row w-full z-10 mt-10 lg:mt-16">
                 <section class="container px-3 xl:px-32 mx-auto lg:w-4/5">
@@ -199,6 +200,7 @@ export const query = graphql`
                     alt
                     gatsbyImageData(height: 600, placeholder: NONE)
                     title
+                    url
                 }
             }
         }
