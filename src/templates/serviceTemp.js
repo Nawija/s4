@@ -148,10 +148,10 @@ const ServiceTemp = ({
                                 </div>
 
                                 <div className="flex flex-col">
-                                    <h2 className="hoverLink text-sm font-medium active:text-gray-900 capitalize transition duration-100">
+                                    <h2 className="hoverLink text-sm font-medium capitalize">
                                         {node.title}
                                     </h2>
-                                    <p className="text-[12px] bg-emerald-600 w-20 text-center text-white mx-auto mt-1 xl:m-0 px-2 rounded-xl">
+                                    <p className="text-[12px] bg-gradient-to-t from-emerald-700 to-emerald-600 font-medium w-20 text-center text-white mx-auto mt-1 xl:m-0 px-2 py-0.5 rounded-xl">
                                         Zobacz
                                     </p>
                                 </div>
