@@ -3,7 +3,6 @@ import Layout from "../components/layout";
 import Seo from "../components/seo";
 
 import { HeroCom, CardCom, ArticleCom, ServiceCom } from "../components/index";
-import { StaticImage } from "gatsby-plugin-image";
 
 const IndexPage = () => {
     return (
@@ -11,7 +10,7 @@ const IndexPage = () => {
             <div className="relative flex-center flex-col z-0">
                 <HeroCom />
                 <CardCom />
-                <section className="flex flex-col items-center justify-center w-full">
+                <section className="flex flex-col items-center justify-center w-full px-3 lg:my-4">
                     <h2 className="title">
                         Odkryj Potęgę Profesjonalnych Stron Internetowych!
                     </h2>
@@ -26,16 +25,17 @@ const IndexPage = () => {
             <ServiceCom />
 
             <div className="py-12 bg-gradient-to-tr from-violet-500 to-blue-500"></div>
-            <div className="relative">
-
-            <StaticImage style={{opacity:".3"}} src="https://img.freepik.com/darmowe-wektory/biale-tlo_23-2148810246.jpg?w=2000&t=st=1687081005~exp=1687081605~hmac=1b89e48e316810d4dfcacf6f7376b69b9a0675a14cb320405ff768d57154c796" alt="bg" />
-            </div>
 
             <div className="h-[100vh]" />
         </Layout>
     );
 };
 
-export const Head = () => <Seo title="Strony Internetowe" description="" />;
+export const Head = () => (
+    <Seo
+        title="Strony Internetowe"
+        description="xxx dsd sd sdsd d ddsd sd sd sdsd sds sd sdsd sd d dsdddd dddddd sssssx"
+    />
+);
 
 export default IndexPage;

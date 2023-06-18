@@ -3,16 +3,16 @@ import { StaticImage } from "gatsby-plugin-image";
 import { Link } from "gatsby";
 
 const ArticleCom = () => (
-    <section className="flex flex-col lg:flex-row items-center space-y-5 justify-center px-6">
+    <section className="flex flex-col lg:flex-row items-center space-y-5 justify-center px-6 pt-12">
         <div className="w-full lg:w-1/2">
-            <StaticImage quality={100} src="../../assets/x.jpg" />
+            <StaticImage quality={100} src="../../images/x.jpg" alt="x" />
         </div>
         <div className="w-full lg:w-1/2 text-center lg:text-start max-w-xl">
             <h2 className="title">
                 Projektowanie i tworzenie stron internetowych <br />
                 <span>| Warszawa | Wrocław | Siedlce |</span>
             </h2>
-            <p className="pb-6">
+            <p className="pb-12 text-start pl-4 lg:pl-0">
                 Jeśli szukasz profesjonalnego wykonawcy strony internetowej,
                 który dostarczy Ci funkcjonalne i estetyczne rozwiązania, warto
                 zwrócić uwagę na moją ofertę wykonania stron i sklepów

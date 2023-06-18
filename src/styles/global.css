@@ -41,7 +41,7 @@ body {
 }
 
 .blue-btn {
-    padding: 0.5rem 0.875rem;
+    padding: 0.6rem 0.93rem;
     background-color: #1a5adb;
     box-shadow: 0 10px 15px -3px #a6d0ff, 0 4px 6px -4px #a6d0ff;
     font-size: 0.875rem;
@@ -61,7 +61,7 @@ body {
 
 .title{
     padding: .5rem 0;
-    font-size: 1.4rem;
+    font-size: 1.7rem;
     font-weight: 600;
     @apply bg-gradient-to-r from-sky-500 font-bold via-blue-600 to-sky-500 bg-clip-text text-transparent;
 }

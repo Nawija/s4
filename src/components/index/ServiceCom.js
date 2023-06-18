@@ -57,7 +57,7 @@ const ServiceCom = () => {
                             }}
                             placeholder="none"
                             height={40}
-                            src="../../assets/premium.png"
+                            src="../../images/premium.png"
                         />
                     </Link>
                 ))}

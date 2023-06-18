@@ -16,7 +16,7 @@ const HeroCom = () => (
                 zIndex: "-10",
             }}
             placeholder="domainColor"
-            src="../../assets/hero.webp"
+            src="../../images/hero.webp"
         />
         <p className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 font-bold text-4xl sm:text-4xl md:text-6xl lg:text-8xl w-max py-6 drop-shadow-lg text-white px-3">
             Doskonałe Strony

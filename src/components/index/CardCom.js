@@ -33,7 +33,7 @@ const CardCom = () => (
                     </div>
                 </div>
 
-                <div className="lg:w-96 md:w-80 w-4/5 mb-4 mx-2 lg:mx-3 px-4 rounded-lg shadow-xl bg-white/60 backdrop-blur-xl ">
+                <div className="lg:w-96 md:w-80 w-4/5 mb-4 mx-2 lg:mx-3 px-4 rounded-lg shadow-xl mt-6 md:mt-0 bg-white/60 backdrop-blur-xl ">
                     <div className="flex flex-col justify-center">
                         <div className="p-4 w-max mx-auto bg-gradient-to-t from-amber-500 to-amber-300 shadow-amber-600 rounded-full shadow-lg -mt-8">
                             <svg
@@ -71,7 +71,7 @@ const CardCom = () => (
                     </div>
                 </div>
 
-                <div className="lg:w-96 md:w-80 w-4/5 mb-4 mx-2 lg:mx-3 px-4 rounded-lg shadow-xl bg-white/60 backdrop-blur-xl ">
+                <div className="lg:w-96 md:w-80 w-4/5 mb-4 mx-2 lg:mx-3 px-4 rounded-lg shadow-xl mt-6 md:mt-0 bg-white/60 backdrop-blur-xl ">
                     <div className="flex flex-col justify-center">
                         <div className="p-4 w-max mx-auto bg-gradient-to-t from-amber-500 to-amber-300 shadow-amber-600 rounded-full shadow-lg -mt-8">
                             <svg
