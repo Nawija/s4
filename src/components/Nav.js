@@ -24,6 +24,7 @@ const Nav = () => {
 
     return (
         <nav
+            id="nav"
             ref={navRef}
             className="w-full bg-white lg:bg-white/90 backdrop-blur-md sticky top-0 z-50"
         >
