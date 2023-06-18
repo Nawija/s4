@@ -63,12 +63,15 @@ body {
     padding: .5rem 0;
     font-size: 1.4rem;
     font-weight: 600;
+    @apply bg-gradient-to-r from-sky-500 font-bold via-blue-600 to-sky-500 bg-clip-text text-transparent;
 }
 .title-sm{
     padding: .5rem 0;
     font-size: 1.2rem;
     font-weight: 600;
+    @apply bg-gradient-to-r from-emerald-500 font-bold via-green-700 to-emerald-300 bg-clip-text text-transparent;
 }
+
 
 .flex-center {
     display: flex;

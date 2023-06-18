@@ -2,8 +2,8 @@ import React from "react";
 import Layout from "../components/layout";
 import Seo from "../components/seo";
 
-
 import { HeroCom, CardCom, ArticleCom, ServiceCom } from "../components/index";
+import { StaticImage } from "gatsby-plugin-image";
 
 const IndexPage = () => {
     return (
@@ -25,8 +25,10 @@ const IndexPage = () => {
             <ArticleCom />
             <ServiceCom />
 
-            <div className="py-12 bg-gradient-to-tr from-violet-500 to-blue-500">
+            <div className="py-12 bg-gradient-to-tr from-violet-500 to-blue-500"></div>
+            <div className="relative">
 
+            <StaticImage style={{opacity:".3"}} src="https://img.freepik.com/darmowe-wektory/biale-tlo_23-2148810246.jpg?w=2000&t=st=1687081005~exp=1687081605~hmac=1b89e48e316810d4dfcacf6f7376b69b9a0675a14cb320405ff768d57154c796" alt="bg" />
             </div>
 
             <div className="h-[100vh]" />
