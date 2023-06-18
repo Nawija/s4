@@ -53,6 +53,67 @@ const ServiceTemp = ({
                                         datoCmsUsluga.descUsluga[0].img.title
                                     }
                                 />
+                                <div className="shadow-md mx-0 text-s border border-yellow-500 w-max p-3 rounded-lg">
+                                    <p className="px-3 font-bold text-emerald-700">
+                                        Udostępnij w Social Media
+                                    </p>
+                                    <div className="flex items-center justify-start space-x-4 mx-3 my-4">
+                                        <FacebookShareButton
+                                            url={`https://seovileo.pl/blog/${datoCmsUsluga.slug}`}
+                                            quote={datoCmsUsluga.title}
+                                            hashtag="#seovileo"
+                                        >
+                                            <div className="w-6 h-6">
+                                                <FacebookIcon
+                                                    size={35}
+                                                    round={true}
+                                                />
+                                            </div>
+                                        </FacebookShareButton>
+                                        <TwitterShareButton
+                                            url={`https://seovileo.pl/blog/${datoCmsUsluga.slug}`}
+                                            title={datoCmsUsluga.title}
+                                            hashtags={["seovileo"]}
+                                        >
+                                            <div className="w-6 h-6">
+                                                <TwitterIcon
+                                                    size={35}
+                                                    round={true}
+                                                />
+                                            </div>
+                                        </TwitterShareButton>
+                                        <PinterestShareButton
+                                            url={`https://seovileo.pl/blog/${datoCmsUsluga.slug}`}
+                                            media={datoCmsUsluga.img.url}
+                                            summary={
+                                                datoCmsUsluga.smallDescription
+                                            }
+                                            source="seovileo.pl"
+                                        >
+                                            <div className="w-6 h-6">
+                                                <PinterestIcon
+                                                    size={35}
+                                                    round={true}
+                                                />
+                                            </div>
+                                        </PinterestShareButton>
+                                        <WhatsappShareButton
+                                            url={`https://seovileo.pl/blog/${datoCmsUsluga.slug}`}
+                                            title={datoCmsUsluga.title}
+                                            summary={
+                                                datoCmsUsluga.smallDescription
+                                            }
+                                            source="seovileo.pl"
+                                        >
+                                            <div className="w-6 h-6">
+                                                <WhatsappIcon
+                                                    size={35}
+                                                    round={true}
+                                                />
+                                            </div>
+                                        </WhatsappShareButton>
+                                    </div>
+                                </div>
 
                                 <div class="block mt-1 -tracking-wide rounded-lg py-3 text-start">
                                     <div class="text-lg mb-4 pb-2">
@@ -63,67 +124,6 @@ const ServiceTemp = ({
                                                     .descUsluga[0].desc,
                                             }}
                                         />
-                                    </div>
-                                    <div className="shadow-md bg-sky-100 w-max p-3 rounded-lg">
-                                        <p className="px-3 font-bold text-green-600">
-                                            Udostępnij w Social Media
-                                        </p>
-                                        <div className="flex items-center justify-start space-x-4 mx-3 my-4">
-                                            <FacebookShareButton
-                                                url={`https://seovileo.pl/blog/${datoCmsUsluga.slug}`}
-                                                quote={datoCmsUsluga.title}
-                                                hashtag="#seovileo"
-                                            >
-                                                <div className="w-6 h-6">
-                                                    <FacebookIcon
-                                                        size={35}
-                                                        round={true}
-                                                    />
-                                                </div>
-                                            </FacebookShareButton>
-                                            <TwitterShareButton
-                                                url={`https://seovileo.pl/blog/${datoCmsUsluga.slug}`}
-                                                title={datoCmsUsluga.title}
-                                                hashtags={["seovileo"]}
-                                            >
-                                                <div className="w-6 h-6">
-                                                    <TwitterIcon
-                                                        size={35}
-                                                        round={true}
-                                                    />
-                                                </div>
-                                            </TwitterShareButton>
-                                            <PinterestShareButton
-                                                url={`https://seovileo.pl/blog/${datoCmsUsluga.slug}`}
-                                                media={datoCmsUsluga.img.url}
-                                                summary={
-                                                    datoCmsUsluga.smallDescription
-                                                }
-                                                source="seovileo.pl"
-                                            >
-                                                <div className="w-6 h-6">
-                                                    <PinterestIcon
-                                                        size={35}
-                                                        round={true}
-                                                    />
-                                                </div>
-                                            </PinterestShareButton>
-                                            <WhatsappShareButton
-                                                url={`https://seovileo.pl/blog/${datoCmsUsluga.slug}`}
-                                                title={datoCmsUsluga.title}
-                                                summary={
-                                                    datoCmsUsluga.smallDescription
-                                                }
-                                                source="seovileo.pl"
-                                            >
-                                                <div className="w-6 h-6">
-                                                    <WhatsappIcon
-                                                        size={35}
-                                                        round={true}
-                                                    />
-                                                </div>
-                                            </WhatsappShareButton>
-                                        </div>
                                     </div>
                                 </div>
                             </div>
